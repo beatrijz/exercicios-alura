@@ -1,0 +1,23 @@
+<meta charset="UTF-8">
+<script>
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+    function intervalo() {
+        var i = 21;
+        while (i >= 1) {
+            var contador = i - 1;
+            mostra(contador);
+            i--
+        }
+        mostra("FIM!");
+
+    }
+
+    intervalo();
+</script>
