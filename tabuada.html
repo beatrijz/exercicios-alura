@@ -1,0 +1,54 @@
+<meta charset="UTF-8">
+<script>
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+    function calculaM (numero){
+        pulaLinha();
+        mostra ("Tabuada de multiplicação com " + numero);
+        for (var i = 1; i <= 10; i ++){
+            var calcula = i * numero;
+            mostra (calcula);
+
+        }
+    }
+    function calculaD (numero){
+        pulaLinha();
+        mostra ("Tabuada de divisão com " + numero);
+        for (var i = 1; i <= 10; i ++){
+            var calcula = (numero / i);
+            mostra (calcula);
+    }
+}
+    function calculaS (numero){
+        pulaLinha();
+        mostra ("Tabuada de soma com " + numero);
+        for (var i = 1; i <= 10; i ++){
+            var calcula = i + numero;
+            mostra (calcula);
+
+    }
+}
+    function calculaMenos (numero){
+        pulaLinha();
+        mostra ("Tabuada de menos com " + numero);
+        for (var i = 1; i <= 10; i ++){
+            var calcula = (numero - i);
+            mostra (calcula);
+
+    }
+}
+    
+    var numero = parseInt(prompt ("Digite qual número você que da tabuada:"));
+    calculaM(numero);
+    calculaD(numero);
+    calculaS(numero);
+    calculaMenos(numero);
+
+
+</script>
