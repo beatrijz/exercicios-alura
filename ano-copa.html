@@ -1,0 +1,25 @@
+<meta charset="UTF-8">
+<script>
+     var soma;
+    function pulalinha (){
+        document.write ( "<br>");
+    }
+    function mostra (x){
+        document.write (x);
+        pulalinha();
+    }
+
+    function repita (){
+        
+        for (var i = 1930; i<= anoCopa; i++){
+            if (i%4 === 0){
+                mostra( "Teve copa em: " + i);
+
+            }
+        }
+    }
+    var anoCopa = parseInt (prompt("Digite até que data você quer saber que teve copa: "));
+    repita();
+
+
+    </script>
