@@ -1,0 +1,28 @@
+<meta scharset = "UTF-8">
+<script>
+    var totalIdade = 0;
+function pulalinha (){
+    document.write ("<br>");
+}
+function mostra (frase){
+    document.write (frase);
+    pulalinha();
+}
+function armazenaIdades (quantidade){
+    for (var i = 1 ; i<= quantidade; i ++){
+    var familiares = parseInt(prompt ("Informe idade do familiar" ));
+    totalIdade = totalIdade + familiares;
+
+    }
+}
+function calculaMedia (quantidade){
+var calcula = totalIdade/ quantidade;
+mostra ("A média das idades dos familiares é de: " + calcula);
+}
+
+var quantidade = parseInt (prompt ( "Qual a sua quantidade de familiares?"));
+armazenaIdades (quantidade);
+calculaMedia (quantidade);
+
+
+</script>
